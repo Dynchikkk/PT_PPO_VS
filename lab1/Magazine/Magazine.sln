@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magazine.Core", "Magazine.Core\Magazine.Core.csproj", "{FD43EE83-2E0D-4B2C-BF09-C912A0F7DAA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magazine.WebApi", "Magazine.WebApi\Magazine.WebApi.csproj", "{95546EA7-4612-40F8-B2E7-002F4B896ED5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD43EE83-2E0D-4B2C-BF09-C912A0F7DAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD43EE83-2E0D-4B2C-BF09-C912A0F7DAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD43EE83-2E0D-4B2C-BF09-C912A0F7DAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD43EE83-2E0D-4B2C-BF09-C912A0F7DAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95546EA7-4612-40F8-B2E7-002F4B896ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95546EA7-4612-40F8-B2E7-002F4B896ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95546EA7-4612-40F8-B2E7-002F4B896ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95546EA7-4612-40F8-B2E7-002F4B896ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
