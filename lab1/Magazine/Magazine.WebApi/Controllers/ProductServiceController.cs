@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Magazine.WebApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ProductServiceController : ControllerBase
     {
         private readonly ILogger<ProductServiceController> _logger;
