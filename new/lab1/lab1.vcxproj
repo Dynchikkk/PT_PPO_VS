@@ -128,9 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Trimer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="markdown_example.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Trimer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
