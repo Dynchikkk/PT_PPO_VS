@@ -7,6 +7,8 @@ This is a sample paragraph. Markdown makes it easy to format text by adding **bo
 ### Third Level Heading
 
 Here is an example of a link: [Google](https://google.com)
+Here is an example of a link: [Discord](https://discord.com)
+Here is an example of a link: [Example](https://example.com)
 
 Another paragraph with multiple lines of text. Markdown automatically combines lines into a single paragraph if there is no empty line between them.
 

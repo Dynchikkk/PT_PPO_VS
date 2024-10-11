@@ -16,6 +16,7 @@ void Trimer::ExtractContent()
     std::regex headerRegex(R"(^#{1,6}\s*(.*))");
     std::regex paragraphRegex(R"(^\s*(\S.*))");
     std::regex linkRegex(R"(\[([^\]]+)\]\(([^)]+)\))");
+    std::regex pattern("Discord|Google");
 
     while (std::getline(file, line)) {
         std::smatch match;
@@ -30,7 +31,14 @@ void Trimer::ExtractContent()
         auto words_end = std::sregex_iterator();
         for (std::sregex_iterator i = words_begin; i != words_end; ++i) {
             std::smatch match = *i;
-            Links.push_back(match[2]);
+            std::string nf = match[1];
+            std::string stars = "";
+            for (int i = 0; i < nf.length(); i++)
+                stars += '*';
+            std::string name = std::regex_replace(nf, pattern, stars);
+            name += " ";
+            name += match[2];
+            Links.push_back(name);
         }
     }
 }
