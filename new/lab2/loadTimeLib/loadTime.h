@@ -1,11 +1,16 @@
 #ifndef LOADTIME_H
 #define LOADTIME_H
 
-#ifdef LOADTIME_EXPORTS
-#define LOADTIME_API __declspec(dllexport)
+#ifdef BUILD_DLL
+    #define LOAD_TIME_EXPORT __declspec(dllexport)
 #else
-#define LOADTIME_API __declspec(dllimport)
+    #define LOAD_TIME_EXPORT __declspec(dllimport)
 #endif
 
-LOADTIME_API void LoadTimeFunc();
-#endif
+extern "C" {
+    LOAD_TIME_EXPORT int OpenDocument(const char* filename);
+    LOAD_TIME_EXPORT int CloseDocument();
+    LOAD_TIME_EXPORT int GenerateException();
+}
+
+#endif // LOADTIME_H
