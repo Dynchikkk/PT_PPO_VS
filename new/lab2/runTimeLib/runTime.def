@@ -1,0 +1,4 @@
+LIBRARY "runTimeLib" 
+EXPORTS 
+	FindElement
+	GenerateException
